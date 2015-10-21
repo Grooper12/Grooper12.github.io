@@ -1,0 +1,98 @@
+
+
+body{
+	/*min-width: 480px;
+	min-height: 460px;*/
+	margin: 0;
+	padding: 0;
+	background: #E5EBF7;
+	text-shadow:10px 1px 0 #ccc;
+
+}
+@media all and (min-width:990px){
+	body {
+		background: #E5EBF7 url(image/page.jpg) no-repeat;
+        	background-size: cover;
+        	background-attachment: fixed;
+	}
+}
+
+
+body header{
+	min-width: 240px;
+	min-height: 110px;														
+	padding-top: 40px;
+}
+body header > h1, p{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 4px 4px 30px rgba(150, 150, 150, 1);
+	color:#0E0E0E;
+}
+h1{
+	padding-top: 10px;
+}
+body header p{
+	margin-top: -15px;
+	font-size: 18px;
+}
+body .center{
+	max-width: 440px;
+	margin-bottom: 100px;
+	/*min-width: 240px;
+	min-height: 120px;
+*/	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+}
+.center img{
+
+	margin-left: 20px;
+	height: 90px;
+	transform: translateY(0);
+	transition: 1s;
+}
+.center img:hover{
+	transform: translateY(5px);
+}
+
+.mail{
+	margin-top: -70px;
+
+}
+.mail > p{
+	font-size: 15px;	
+
+}
+.mail > p > a{
+	text-decoration: none;
+	color:#2E2E2E;
+	font-style: italic;
+	font-weight: bold;
+}
+.icons{
+	min-height: 80px;
+	max-width: 440px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.icons img{
+	width: 40px;
+	height: 40px;
+	border:solid 2px black;
+	border-radius: 50%;
+	padding: 10px;
+	margin-left: 10px;
+}
+.icons img:hover{
+	background: white;
+	border:solid 2px white ;
+	transition-duration:2s;
+}
+footer p{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
