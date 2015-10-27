@@ -9,9 +9,9 @@ body{
 	text-shadow:10px 1px 0 #ccc;
 
 }
-@media all and (min-width:990px){
+@media all{
 	body {
-		background: #E5EBF7 url(image/page.jpg) no-repeat;
+		background: #E5EBF7 url(image/background.jpg) no-repeat;
         	background-size: cover;
         	background-attachment: fixed;
 	}
