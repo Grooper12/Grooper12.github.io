@@ -87,8 +87,8 @@ body .center{
 	margin-left: 10px;
 }
 .icons img:hover{
-	background: white;
-	border:solid 2px white ;
+	background: #DEDEDE;
+	border:solid 2px white;
 	transition-duration:2s;
 }
 footer p{
