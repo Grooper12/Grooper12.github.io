@@ -3,39 +3,42 @@ body{
 	padding: 0;
 	font-family: Verdana, Geneva, sans-serif;
 	background: #FFFFFF;
+	font-size: 16px;
 	background-size: cover;
 	color: #191919;
 }
 .name{
 	text-align: center;
-	background: -moz-linear-gradient(top, #099ebd 0%, #1aa1bc 24%, #55a9ba 54%, #55a9ba 54%, #8bb0b7 76%, #8bb0b7 76%, #9ab4ba 93%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #099ebd 0%,#1aa1bc 24%,#55a9ba 54%,#55a9ba 54%,#8bb0b7 76%,#8bb0b7 76%,#9ab4ba 93%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #099ebd 0%,#1aa1bc 24%,#55a9ba 54%,#55a9ba 54%,#8bb0b7 76%,#8bb0b7 76%,#9ab4ba 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	padding-top: 5px;
+	position: relative;
+	overflow: hidden;
 }
 .name h2{
-	font-weight: normal;
-	margin-top: 5px;
-	font-size: 14px;
+	position: absolute;
+	font-size: 18px;
+	line-height: 30px;
+	z-index: 3;
+	bottom:0;
+	background: rgba(242,240,240,0.6);
+	width: 100%;
 }
-.name .author-photo{
-	max-width:60px;
-	border-radius: 50%;
-	padding-bottom: 10px;
+.name .author-photo{	
+	transform:scale(1);
+	transition:1s;
+	transform-origin: 0 0;
+}
+.name .author-photo:hover{
+	transform:scale(1.2);
 }
 
-.name .author-photo img{
-	max-width: 100%;
-}
 .main-article{
 	padding-left: 10px;
 	padding-right: 10px;
 }
 .main-article h3{
-	font-weight: normal;
+	font-weight: bold;
 }
 .main-article p{
-	font-size: 16px;
+	line-height: 22px;
 }
 .icons img{
 	max-width: 60px;
@@ -47,8 +50,7 @@ body{
 	border-bottom: 3px solid #FFFFFF;
 }
 .list h3{
-	font-weight: normal;
-	padding-top: 5px;
+	padding-top: 5px; 
 }
 
 .list ul{
@@ -59,11 +61,11 @@ body{
 .list ul li{
 	margin-top: 5px;
 	padding: 10px;
-	font-size: 16px;
+	line-height: 22px;
 }
 .list ul li:before{
 	content: '✔ ';
-	padding-bottom:20px;
+	padding-bottom:25px;
 	padding-right: 10px;
 	float: left;
 
@@ -71,9 +73,6 @@ body{
 .icons{
 	padding-left: 10px;
 	padding-right: 10px;
-}
-.icons h3{
-	font-weight: normal;
 }
 .icons .pictures{
 	text-align: center;
@@ -92,12 +91,12 @@ body{
 	border:solid 2px #FFFFFF;
 	transition-duration:2s;
 }
-footer{
-	float: left;
-	padding-left: 10px;
-}
-footer p{
-	font-size: 12px;
+
+footer p{	
+	text-align: center;
+	background: rgba(242,240,240,0.9);
+	font-size: 16px;
+	line-height: 20px;
 }
 
 @media (min-width: 640px){
@@ -112,7 +111,6 @@ footer p{
 	}
 	.name .author-photo{
 		max-width:120px;
-		border-radius: 50%;
 		padding-bottom: 10px;
 	}
 	main{
