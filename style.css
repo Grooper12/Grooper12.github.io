@@ -4,15 +4,14 @@ body{
 	font-family: Verdana, Geneva, sans-serif;
 	background: #FFFFFF;
 	font-size: 16px;
-	background-size: cover;
 	color: #191919;
 }
-.name{
+header{
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 }
-.name h2{
+header h2{
 	position: absolute;
 	font-size: 18px;
 	line-height: 30px;
@@ -21,13 +20,14 @@ body{
 	background: rgba(242,240,240,0.6);
 	width: 100%;
 }
-.name .author-photo{	
+header .author-photo{	
 	transform:scale(1);
 	transition:1s;
+	max-width: 100%;
 	transform-origin: 0 0;
 }
-.name .author-photo:hover{
-	transform:scale(1.2);
+header .author-photo:hover{
+	transform:scale(1.1);
 }
 
 .main-article{
@@ -100,16 +100,16 @@ footer p{
 }
 
 @media (min-width: 640px){
-	.name{
+	header{
 		background: #099EBD;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.name h2{
+	header h2{
 		font-size: 24px;
 
 	}
-	.name .author-photo{
+	header .author-photo{
 		max-width:120px;
 		padding-bottom: 10px;
 	}
