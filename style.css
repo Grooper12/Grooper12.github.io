@@ -1,20 +1,17 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Coda Caption', sans-serif;
-	background: url("image/background.jpg");
+	font-family: Verdana, Geneva, sans-serif;
+	background: #FFFFFF;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	border-top: 3px solid #FFFFFF;
 	color: #191919;
 }
 .name{
 	text-align: center;
-	background: #099EBD;
+	background: -moz-linear-gradient(top, #099ebd 0%, #1aa1bc 24%, #55a9ba 54%, #55a9ba 54%, #8bb0b7 76%, #8bb0b7 76%, #9ab4ba 93%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #099ebd 0%,#1aa1bc 24%,#55a9ba 54%,#55a9ba 54%,#8bb0b7 76%,#8bb0b7 76%,#9ab4ba 93%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #099ebd 0%,#1aa1bc 24%,#55a9ba 54%,#55a9ba 54%,#8bb0b7 76%,#8bb0b7 76%,#9ab4ba 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	padding-top: 5px;
-	border-bottom: 3px solid #FFFFFF;
-	box-shadow: 0px 6px 18px 0px rgba(46,85,143,1);
 }
 .name h2{
 	font-weight: normal;
@@ -33,8 +30,6 @@ body{
 .main-article{
 	padding-left: 10px;
 	padding-right: 10px;
-	box-shadow: 0px 6px 18px 0px rgba(46,85,143,0.6);
-	border-bottom: 3px solid #FFFFFF;
 }
 .main-article h3{
 	font-weight: normal;
@@ -50,16 +45,12 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 	border-bottom: 3px solid #FFFFFF;
-	box-shadow: 0px 6px 18px 0px rgba(46,85,143,0.6);
 }
 .list h3{
 	font-weight: normal;
 	padding-top: 5px;
 }
 
-.list li{
-	font-size: 16px;
-}
 .list ul{
 	padding: 0;
 	list-style: none;
@@ -67,6 +58,15 @@ body{
 }
 .list ul li{
 	margin-top: 5px;
+	padding: 10px;
+	font-size: 16px;
+}
+.list ul li:before{
+	content: '✔ ';
+	padding-bottom:20px;
+	padding-right: 10px;
+	float: left;
+
 }
 .icons{
 	padding-left: 10px;
@@ -118,7 +118,6 @@ footer p{
 	main{
 		padding-bottom: 60px;
 		border-bottom: 3px solid #FFFFFF;
-		box-shadow: 0px 6px 18px 0px rgba(46,85,143,0.6);
 	}
 	.main-article{
 		display: inline-block;
@@ -144,6 +143,7 @@ footer p{
 	}
 	.icons .pictures img{
 		max-width: 60px;
+		margin: 5px;
 		max-height: 60px;
 	}
 }
