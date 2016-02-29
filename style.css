@@ -98,50 +98,60 @@ footer p{
 	font-size: 16px;
 	line-height: 20px;
 }
-
 @media (min-width: 640px){
-	header{
-		background: #099EBD;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	header h2{
-		font-size: 24px;
+	body{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+}
+header .author-photo{
+	max-width: 240px;
+}
+header h2{
+	display: none;
+}
+main{
 
-	}
-	header .author-photo{
-		max-width:120px;
-		padding-bottom: 10px;
-	}
-	main{
-		padding-bottom: 60px;
-		border-bottom: 3px solid #FFFFFF;
-	}
-	.main-article{
-		display: inline-block;
-		max-width: 45%;
-		box-shadow:  none;
-		border: none;
-		padding-bottom: 60px;
-	}
-	.main-article h3{
-	}
-	.list{
-		display: inline-block;
-		float: right;
-		max-width: 45%;
-		border: none;
-		box-shadow:  none;
-	}
-	.list ul{
-		list-style: none;
-	}
-	.icons h3{
-		text-align: center;
-	}
-	.icons .pictures img{
-		max-width: 60px;
-		margin: 5px;
-		max-height: 60px;
-	}
+}
+.main-article{
+	max-width: 46%;
+	padding: 0;
+	margin: 5px;
+	float: left;
+	display: inline-block;
+}
+.main-article p{
+}
+.main-article h3{
+	text-align: right;
+	margin: 5px;
+}
+.list{
+	max-width: 49.2%;
+	padding: 0;
+	margin: 5px;
+	display: inline-block;
+}
+.list h3{
+	text-align: left;
+	margin:5px;
+	padding: 0;
+}
+.icons{
+}
+.icons .pictures{
+	padding: 5px;
+
+}
+.icons .pictures img{
+	max-width: 60px;
+	max-height: 60px;
+}
+.icons h3{
+	text-align: center;
+}
+
+footer p{
+	text-align: left;
+	background:#FFFFFF;
 }
